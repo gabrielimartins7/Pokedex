@@ -3,7 +3,7 @@
     padding: 40px;
     color: $gray;
     text-align: center;
-	border-radius: 20px;
+	border-radius: 50%;
 	position: relative;
 }
 
@@ -102,15 +102,9 @@
 }
 
 .card-image {
-	width: 120px;
-	height: 120px;
+	height: 180px;
 	position: relative;
 	z-index: 2;
-}
-
-.card-image img {
-	margin-top: 20px;
-	max-width: 90%;
 }
 
 @keyframes bounce {

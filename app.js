@@ -1,6 +1,6 @@
-const fetchPokemon = () => {
-    const getPokemonUrl = id => `https://pokeapi.co/api/v2/pokemon/${id}`
+const getPokemonUrl = id => `https://pokeapi.co/api/v2/pokemon/${id}`
 
+const fetchPokemon = () => {
     const pokemonPromises = []
 
     for (let i = 1; i <= 150; i++) {
@@ -15,7 +15,7 @@ const fetchPokemon = () => {
                     <li class="card ${types[0]}">
                     <img class="card-img" alt="${pokemon.name}" src="https://pokeres.bastionbot.org/images/pokemon/${pokemon.id}.png"/>
                         <h2 class="card-title">${pokemon.id}. ${pokemon.name}</h2>
-                        <p class="sub-title">${types.join(    )}</p>
+                        <p class="sub-title">${types.join(" | ")}</p>
                     </li>
                 `
                 return accumulator
